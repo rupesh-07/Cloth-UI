@@ -1,0 +1,108 @@
+.collection-container {
+  background-color: rgba(211, 211, 211, 0.432);
+  background: linear-gradient(to right, #d4d4d47e, #f8f8f8);
+  margin: 1rem;
+  border-radius: 16px;
+  padding: 1rem;
+}
+.collection-container-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.most-selling-text {
+  margin: 1rem 0px 5px 16px;
+  letter-spacing: 1px;
+  color: red;
+  font-size: 14px;
+}
+.explore-text {
+  margin: 1rem 0px 1rem 16px;
+}
+
+.selling-btn button {
+  cursor: pointer;
+  padding: 6px 8px;
+  margin: 4px;
+  border-radius: 26px;
+  border: 1px solid gainsboro;
+  background-color: black;
+  color: white;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.selling-btn button:hover {
+  background-color: red;
+}
+
+@media (max-width: 630px) {
+  .collection-container-heading {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.cardStyle {
+  border: 1px solid #ccc;
+  margin: 10px;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 16px;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.cardStyle:hover {
+  opacity: 0.8;
+  transform: translateY(-5px);
+}
+
+.cardStyle p {
+  padding-left: 6px;
+}
+
+.star-rating {
+  font-size: 18px;
+  color: gold;
+  padding-left: 6px;
+}
+.price {
+  float: right;
+  color: red;
+  padding-right: 6px;
+}
+.imageStyle {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.collection-container-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+@media (max-width: 880px) {
+  .collection-container-card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 630px) {
+  .collection-container-card {
+    margin-top: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 450px) {
+  .collection-container-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cardStyle {
+    max-width: 250px;
+  }
+}

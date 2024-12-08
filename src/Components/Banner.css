@@ -1,0 +1,108 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  width: 98%;
+  margin: 0 auto;
+  background: linear-gradient(to bottom right, #ffff94, #ffffff);
+  border-radius: 16px;
+}
+
+.banner-text {
+  margin-top: 1rem;
+  padding: 8px;
+  font-size: 2rem;
+  font-family: "Roboto Slab";
+}
+
+.eco-text {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.banner-img-container {
+  display: flex;
+}
+
+.image-container {
+  position: relative;
+  margin: 1rem;
+}
+
+.dress {
+  height: 300px;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bottom-left-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.top-right-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.heart-btn {
+  background-color: whitesmoke;
+  color: red;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1060px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-img-container {
+    margin-top: 10px;
+  }
+  .banner-text {
+    padding: 4px;
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 830px) {
+  .dress {
+    width: 100%;
+  }
+  .banner-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .banner-img-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .dress {
+    max-width: 200px;
+  }
+  .image-container {
+    margin: 0.5rem;
+  }
+  .banner-text {
+    font-size: 1.4rem;
+  }
+}
